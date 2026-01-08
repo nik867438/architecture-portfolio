@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: YOUR_GITHUB_USERNAME/architecture-portfolio
   branch: main
 
 media_folder: "images/uploads"
@@ -17,7 +18,7 @@ collections:
             name: "projects"
             widget: "list"
             fields:
-              - { label: "Project Title", name: "title", widget: "string" }
-              - { label: "Category", name: "type", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Type", name: "type", widget: "string" }
               - { label: "Location", name: "location", widget: "string" }
               - { label: "Image", name: "image", widget: "image" }
